@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoggedInActivity">
+
+    <Button
+        android:id="@+id/EditLI"
+        android:layout_width="163dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginLeft="112dp"
+        android:layout_marginBottom="284dp"
+        android:text="Edit Account Details"
+        app:backgroundTint="#CC3838"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/UsernameLI"
+        android:layout_width="165dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginLeft="112dp"
+        android:layout_marginTop="60dp"
+        android:text="Username(TO DO)"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/ComposeLI"
+        android:layout_width="163dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginLeft="112dp"
+        android:layout_marginTop="72dp"
+        android:text="Compose"
+        app:backgroundTint="#CC3838"
+        app:layout_constraintBottom_toTopOf="@+id/EditLI"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UsernameLI" />
+</androidx.constraintlayout.widget.ConstraintLayout>

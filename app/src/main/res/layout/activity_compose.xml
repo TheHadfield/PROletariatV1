@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ComposeActivity">
+
+    <CheckBox
+        android:id="@+id/councCBox2"
+        android:layout_width="99dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Councilor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/TDCBox2"
+        app:layout_constraintTop_toBottomOf="@+id/CouncCBox" />
+
+    <CheckBox
+        android:id="@+id/TDCBox2"
+        android:layout_width="101dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="17dp"
+        android:text="TD"
+        app:layout_constraintBaseline_toBaselineOf="@+id/councCBox2"
+        app:layout_constraintStart_toEndOf="@+id/PartyTextCompose" />
+
+    <CheckBox
+        android:id="@+id/IndCompose"
+        android:layout_width="155dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginRight="56dp"
+        android:text="Others"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SFCompose" />
+
+    <CheckBox
+        android:id="@+id/SDCompose"
+        android:layout_width="70dp"
+        android:layout_height="41dp"
+        android:text="SD"
+        app:layout_constraintBaseline_toBaselineOf="@+id/IndCompose"
+        app:layout_constraintEnd_toStartOf="@+id/IndCompose"
+        app:layout_constraintHorizontal_bias="0.613"
+        app:layout_constraintStart_toEndOf="@+id/PBPCompose" />
+
+    <CheckBox
+        android:id="@+id/PBPCompose"
+        android:layout_width="70dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:text="PBP"
+        app:layout_constraintBaseline_toBaselineOf="@+id/SDCompose"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/LabCompose"
+        android:layout_width="70dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginRight="56dp"
+        android:text="LAB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/councCBox2" />
+
+    <EditText
+        android:id="@+id/EMailCompose"
+        android:layout_width="268dp"
+        android:layout_height="307dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginLeft="72dp"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="Compose Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ConsCompose"
+        android:layout_width="123dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Own Consitituency"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EMailCompose" />
+
+    <TextView
+        android:id="@+id/PartyTextCompose"
+        android:layout_width="122dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Target by party"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ConsCompose" />
+
+    <CheckBox
+        android:id="@+id/FFcomp"
+        android:layout_width="82dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:text="FF"
+        app:layout_constraintBaseline_toBaselineOf="@+id/FiannaGaelCompose"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/FiannaGaelCompose"
+        android:layout_width="74dp"
+        android:layout_height="41dp"
+        android:text="FG"
+        app:layout_constraintBaseline_toBaselineOf="@+id/SFCompose"
+        app:layout_constraintEnd_toStartOf="@+id/SFCompose"
+        app:layout_constraintHorizontal_bias="0.416"
+        app:layout_constraintStart_toEndOf="@+id/FFcomp" />
+
+    <CheckBox
+        android:id="@+id/SFCompose"
+        android:layout_width="70dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:text="SF"
+        app:layout_constraintBaseline_toBaselineOf="@+id/LabCompose"
+        app:layout_constraintEnd_toStartOf="@+id/LabCompose" />
+
+    <Button
+        android:id="@+id/ConfirmCompose"
+        android:layout_width="74dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="4dp"
+        android:text="Send"
+        app:backgroundTint="#CC3838"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/TDCBox"
+        android:layout_width="101dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="TD"
+        app:layout_constraintBaseline_toBaselineOf="@+id/CouncCBox"
+        app:layout_constraintStart_toEndOf="@+id/ConsCompose" />
+
+    <CheckBox
+        android:id="@+id/CouncCBox"
+        android:layout_width="99dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Councilor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/TDCBox"
+        app:layout_constraintTop_toBottomOf="@+id/EMailCompose" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

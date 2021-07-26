@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ComposeActivity2">
+
+    <RadioButton
+        android:id="@+id/PBPCompose2"
+        android:layout_width="89dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="28dp"
+        android:text="PBP"
+        app:layout_constraintStart_toEndOf="@+id/LabCompose2"
+        app:layout_constraintTop_toBottomOf="@+id/FGCompose2" />
+
+    <RadioButton
+        android:id="@+id/FFCompose"
+        android:layout_width="88dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="52dp"
+        android:text="FF"
+        app:layout_constraintStart_toEndOf="@+id/PartyCompose2"
+        app:layout_constraintTop_toBottomOf="@+id/TDCompose2" />
+
+    <RadioButton
+        android:id="@+id/SFCompose2"
+        android:layout_width="79dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="52dp"
+        android:text="SF"
+        app:layout_constraintStart_toEndOf="@+id/FGCompose2"
+        app:layout_constraintTop_toBottomOf="@+id/CouncilCompose2" />
+
+    <EditText
+        android:id="@+id/EMailCompose2"
+        android:layout_width="381dp"
+        android:layout_height="296dp"
+        android:layout_marginTop="68dp"
+        android:ems="10"
+        android:hint="Compose E-mail. No Introductory line"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ConstCompose2"
+        android:layout_width="132dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="60dp"
+        android:text="Target Constituency Politicians"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EMailCompose2" />
+
+    <RadioButton
+        android:id="@+id/TDCompose2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="TDs"
+        app:layout_constraintEnd_toStartOf="@+id/CouncilCompose2"
+        app:layout_constraintHorizontal_bias="0.376"
+        app:layout_constraintStart_toEndOf="@+id/ConstCompose2"
+        app:layout_constraintTop_toBottomOf="@+id/EMailCompose2" />
+
+    <RadioButton
+        android:id="@+id/CouncilCompose2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="108dp"
+        android:layout_marginRight="108dp"
+        android:text="Councillors"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EMailCompose2" />
+
+    <TextView
+        android:id="@+id/PartyCompose2"
+        android:layout_width="138dp"
+        android:layout_height="123dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="44dp"
+        android:text="Party, Select at least 1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ConstCompose2" />
+
+    <RadioButton
+        android:id="@+id/LabCompose2"
+        android:layout_width="88dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="24dp"
+        android:text="LAB"
+        app:layout_constraintStart_toEndOf="@+id/PartyCompose2"
+        app:layout_constraintTop_toBottomOf="@+id/FFCompose" />
+
+    <RadioButton
+        android:id="@+id/FGCompose2"
+        android:layout_width="79dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="52dp"
+        android:text="FG"
+        app:layout_constraintStart_toEndOf="@+id/LabCompose2"
+        app:layout_constraintTop_toBottomOf="@+id/TDCompose2" />
+
+    <RadioButton
+        android:id="@+id/SDCompos2"
+        android:layout_width="79dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="32dp"
+        android:text="SD"
+        app:layout_constraintStart_toEndOf="@+id/PBPCompose2"
+        app:layout_constraintTop_toBottomOf="@+id/SFCompose2" />
+
+    <RadioButton
+        android:id="@+id/AontuCompose2"
+        android:layout_width="103dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="184dp"
+        android:layout_marginLeft="184dp"
+        android:layout_marginTop="20dp"
+        android:text="Aontu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LabCompose2" />
+
+    <RadioButton
+        android:id="@+id/IndCompose2"
+        android:layout_width="133dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="28dp"
+        android:text="Ind4Change"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.027"
+        app:layout_constraintStart_toEndOf="@+id/AontuCompose2"
+        app:layout_constraintTop_toBottomOf="@+id/PBPCompose2" />
+
+    <RadioButton
+        android:id="@+id/OtherCompose2"
+        android:layout_width="198dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="208dp"
+        android:layout_marginLeft="208dp"
+        android:layout_marginTop="36dp"
+        android:text="Others"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AontuCompose2" />
+
+    <RadioButton
+        android:id="@+id/CouncilCompose3"
+        android:layout_width="126dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:text="Councillors"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/OtherCompose2" />
+
+    <RadioButton
+        android:id="@+id/TDCompose3"
+        android:layout_width="116dp"
+        android:layout_height="56dp"
+        android:text="TDs"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/CouncilCompose3"
+        app:layout_constraintHorizontal_bias="0.769"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/OtherCompose2"
+        app:layout_constraintVertical_bias="0.126" />
+
+    <TextView
+        android:id="@+id/TextCompose1"
+        android:layout_width="133dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="192dp"
+        android:text="Select at least 1 if selecting by party"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PartyCompose2" />
+
+    <Button
+        android:id="@+id/ButtonCompose2"
+        android:layout_width="78dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="20dp"
+        android:text="Send"
+        app:backgroundTint="#CC3838"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.21"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:background="@color/teal_200"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true">
+
+
+    <EditText
+        android:id="@+id/subjectLineFrag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Enter Subject Line"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/emailFrag"
+        android:layout_width="334dp"
+        android:layout_height="269dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Enter e-mail \n Don't include introductory line"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="@+id/subjectLineFrag"
+        app:layout_constraintStart_toStartOf="@+id/subjectLineFrag"
+        app:layout_constraintTop_toBottomOf="@+id/subjectLineFrag" />
+
+    <Button
+        android:id="@+id/confirmFrag"
+        android:layout_width="117dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="6dp"
+        android:onClick="storeEmail"
+        android:text="Confirm"
+        app:layout_constraintEnd_toEndOf="@+id/emailFrag"
+        app:layout_constraintStart_toStartOf="@+id/emailFrag"
+        app:layout_constraintTop_toBottomOf="@+id/emailFrag" />
+</androidx.constraintlayout.widget.ConstraintLayout>
